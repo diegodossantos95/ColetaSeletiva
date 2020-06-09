@@ -22,13 +22,20 @@ function change_panels(new_index){
 }
 
 var map = '';
+var marker;
 
 function initialize() {
+	var latLng = {lat: -29.856564, lng: -51.097657};
     var mapOptions = {
       zoom: 14,
-      center: new google.maps.LatLng(16.8461789,96.1309764)
+      center: latLng
     };
-    map = new google.maps.Map(document.getElementById('google_map'),  mapOptions);
+	map = new google.maps.Map(document.getElementById('google_map'),  mapOptions);
+	marker = new google.maps.Marker({
+		position: latLng,
+		map: map,
+		title: 'Cooperativa Cooprevive'
+	});
 }
 
 // load google map
