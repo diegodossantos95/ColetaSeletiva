@@ -76,6 +76,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 .navbar-collapse .navbar-nav.navbar-right:last-child { margin-right: 0; }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #394665; }
 
+.header-logo { height: 60px; }
 /*------------------------------------------------------
 	FLEXSLIDER OVERRIDING 
 --------------------------------------------------------*/
