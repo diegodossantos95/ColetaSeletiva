@@ -35,6 +35,10 @@ section h1 { text-transform: uppercase; color: white; margin-top: 0px; margin-bo
 .center-row { display: table; }
 .center-row .center { display: table-cell; vertical-align: middle; }
 
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
 /*------------------------------------------------------
 	NAVIGATION 
 --------------------------------------------------------*/
@@ -250,9 +254,8 @@ footer .row { height: 100%; }
 .btn-primary {
 	font-size: 2em;
 	padding-bottom: 10px;
+	padding-top: 10px;
   	background-color: rgb( 3, 150, 89 );
-  	box-shadow: 0px 3px 0px 0px rgb(8, 110, 61);
-  	width: 160px;
   	height: 55px;
   	border: none; border-radius: 0px;
   	-moz-transition: background-color .5s ease;
@@ -263,7 +266,6 @@ footer .row { height: 100%; }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
 	background-color: rgb( 8, 110, 61 );
-	box-shadow: 0px 3px 0px 0px rgb( 3, 150, 89 );
 }
 
 /*------------------------------------------------------
