@@ -35,9 +35,14 @@ section h1 { text-transform: uppercase; color: white; margin-top: 0px; margin-bo
 .center-row { display: table; }
 .center-row .center { display: table-cell; vertical-align: middle; }
 
-.vertical-align {
+.flex-align {
     display: flex;
-    align-items: center;
+}
+
+.buttons-wrap {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .modal-header {
@@ -261,9 +266,10 @@ footer .row { height: 100%; }
 .col-md-4, .col-md-5, .col-md-7, .col-md-8 { padding: 0; }
 
 .btn-primary {
-	font-size: 2em;
+	font-size: 1.3em;
 	padding-bottom: 10px;
 	padding-top: 10px;
+	margin-bottom: 5px;
   	background-color: rgb( 3, 150, 89 );
   	height: 55px;
   	border: none; border-radius: 0px;
@@ -282,6 +288,7 @@ footer .row { height: 100%; }
 --------------------------------------------------------*/
 @media only screen and (min-width: 1200px){
 	h1 { font-size: 4.5em; }
+	#skills h1 { font-size: 3.5em; }
 	.services_buttons { text-align: right; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
 		height: 85px;
@@ -296,6 +303,7 @@ footer .row { height: 100%; }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	h1 { font-size: 3.5em; }
+	#skills h1 { font-size: 2.5em; }
 	.services_buttons { text-align: right; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
 		height: 85px;
@@ -310,6 +318,7 @@ footer .row { height: 100%; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	h1 { font-size: 2.5em; }
+	#skills h1 { font-size: 1.5em; }
 	nav { font-size: 1em; }
 	.btn-primary { font-size: 1.6em; }
 	.services_buttons { text-align: left; }
@@ -326,6 +335,7 @@ footer .row { height: 100%; }
 
 @media only screen and (max-width: 767px) and (min-width: 481px) {
 	h1 { font-size: 2.5em; }
+	#skills h1 { font-size: 1.5em; }
 	nav .fa { display: inline; text-align: left; margin-bottom: 0; margin-right: 10px; }
 	.navbar-default .navbar-nav>li>a { padding-top: 15px; padding-bottom: 15px; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
