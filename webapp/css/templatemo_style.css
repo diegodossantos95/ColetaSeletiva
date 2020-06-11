@@ -39,6 +39,15 @@ section h1 { text-transform: uppercase; color: white; margin-top: 0px; margin-bo
     display: flex;
     align-items: center;
 }
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
 /*------------------------------------------------------
 	NAVIGATION 
 --------------------------------------------------------*/
