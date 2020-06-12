@@ -252,6 +252,11 @@ footer .contatos {
   font-size: 1em; 
 }
 
+footer .flex-justify {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*------------------------------------------------------
 	BOOTSTRAP OVERRIDING 
 --------------------------------------------------------*/
