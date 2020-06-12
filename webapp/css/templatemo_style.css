@@ -258,7 +258,22 @@ footer .row { height: 100%; }
 
 .social_buttons a {	text-decoration: none; }
 
-#templatemo_copyright { font-size: .9em; }
+footer .nome { 
+  padding-top: 1em; 
+  font-size: 1em; 
+}
+
+footer .copyright { font-size: .8em; }
+
+footer .contatos { 
+  padding-top: 1em;
+  font-size: 1em; 
+}
+
+footer .flex-justify {
+  display: flex;
+  justify-content: space-between;
+}
 
 /*------------------------------------------------------
 	BOOTSTRAP OVERRIDING 
