@@ -161,14 +161,6 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 .arrow-box { position: relative; color: white; background-color: #04ac9e; border-radius: 4px; margin-left: 30px; height: 100%;}
 .arrow-left { display: block; width: 30px; height: 58px; background: url(../images/left_arrow.png) no-repeat 0 0; position: absolute; left: 1px; margin-top: 20px; }
 
-/*------------------------------------------------------
-	Skills Styles 
---------------------------------------------------------*/
-.progress { background-color: black; border-radius: 0px; }
-.progress.vertical:last-of-type { margin-right: 0; }
-.progress-bar {	position:absolute; bottom:0; left:0; } /*http://stackoverflow.com/questions/2015032/align-divs-to-bottom-or-baseline*/
-.progress-label { position:absolute; width: 100%; bottom:0; }
-
 /*http://stackoverflow.com/questions/16318375/how-to-align-vertically-a-progress-bar-in-twitter-bootstrap*/
 .progress.vertical {
     position: relative;
@@ -182,7 +174,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
     border: none;
 }
 
-#skills h1, .progress-bar { background-color: #039659; }
+#recycle h1, .progress-bar { background-color: #039659; }
 
 /*------------------------------------------------------
 	Portfolio Styles 
@@ -297,35 +289,35 @@ footer .flex-justify {
 --------------------------------------------------------*/
 @media only screen and (min-width: 1200px){
 	h1 { font-size: 4.5em; }
-	#skills h1 { font-size: 3.5em; }
+	#recycle h1 { font-size: 3.5em; }
 	.services_buttons { text-align: right; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
 		height: 85px;
 	}
 	#about .col-md-7 { padding-left: 50px; }
 	#about .col-md-8 { padding-left: 20px; }
-	#skills .col-md-7 { padding-right: 90px; }
+	#recycle .col-md-7 { padding-right: 90px; }
 	#portfolio .col-md-7 { padding-left: 46px; }
 	#contact .col-md-7 { padding-left: 50px; }	
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	h1 { font-size: 3.5em; }
-	#skills h1 { font-size: 2.5em; }
+	#recycle h1 { font-size: 2.5em; }
 	.services_buttons { text-align: right; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
 		height: 85px;
 	}
 	#about .col-md-7 { padding-left: 30px; }
 	#about .col-md-8 { padding-left: 20px; }
-	#skills .col-md-7 { padding-right: 30px; }
+	#recycle .col-md-7 { padding-right: 30px; }
 	#portfolio .col-md-7 { padding-left: 30px; }
 	#contact .col-md-7 { padding-left: 30px; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	h1 { font-size: 2.5em; }
-	#skills h1 { font-size: 1.5em; }
+	#recycle h1 { font-size: 1.5em; }
 	nav { font-size: 1em; }
 	.btn-primary { font-size: 1.6em; }
 	.services_buttons { text-align: left; }
@@ -342,7 +334,7 @@ footer .flex-justify {
 
 @media only screen and (max-width: 767px) and (min-width: 481px) {
 	h1 { font-size: 2.5em; }
-	#skills h1 { font-size: 1.5em; }
+	#recycle h1 { font-size: 1.5em; }
 	nav .fa { display: inline; text-align: left; margin-bottom: 0; margin-right: 10px; }
 	.navbar-default .navbar-nav>li>a { padding-top: 15px; padding-bottom: 15px; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
