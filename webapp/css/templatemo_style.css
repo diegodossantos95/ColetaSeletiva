@@ -31,9 +31,29 @@ section h1 { text-transform: uppercase; color: white; margin-top: 0px; margin-bo
 
 .container { margin: 0 auto; }
 
+p { text-align: center; }
+
 /*http://css-tricks.com/vertically-center-multi-lined-text/*/
 .center-row { display: table; }
 .center-row .center { display: table-cell; vertical-align: middle; }
+
+.flex-align {
+    display: flex;
+}
+
+.buttons-wrap {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
 
 /*------------------------------------------------------
 	NAVIGATION 
@@ -101,16 +121,8 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 --------------------------------------------------------*/
 #about h1 { background-color: #36AD47; }
 #about img { padding: 0; }
-#about_content { height: 280px; }
-
-/*------------------------------------------------------
-	Our Team Styles
---------------------------------------------------------*/
-#team .col-md-4 { padding: 5px; }
-#team img { margin: 0 auto; margin-bottom: 15px; }
-#team h1 { background-color: #0f70b4; }
-#team p { text-align: center; }
-#team_content { height: 280px; }
+#about_content { height: 280px; overflow-y: scroll; }
+#historic_content { height: 230px; overflow-y: scroll; }
 
 /*------------------------------------------------------
 	Services Styles 
@@ -149,14 +161,6 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 .arrow-box { position: relative; color: white; background-color: #04ac9e; border-radius: 4px; margin-left: 30px; height: 100%;}
 .arrow-left { display: block; width: 30px; height: 58px; background: url(../images/left_arrow.png) no-repeat 0 0; position: absolute; left: 1px; margin-top: 20px; }
 
-/*------------------------------------------------------
-	Skills Styles 
---------------------------------------------------------*/
-.progress { background-color: black; border-radius: 0px; }
-.progress.vertical:last-of-type { margin-right: 0; }
-.progress-bar {	position:absolute; bottom:0; left:0; } /*http://stackoverflow.com/questions/2015032/align-divs-to-bottom-or-baseline*/
-.progress-label { position:absolute; width: 100%; bottom:0; }
-
 /*http://stackoverflow.com/questions/16318375/how-to-align-vertically-a-progress-bar-in-twitter-bootstrap*/
 .progress.vertical {
     position: relative;
@@ -170,7 +174,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
     border: none;
 }
 
-#skills h1, .progress-bar { background-color: #039659; }
+#recycle h1, .progress-bar { background-color: #039659; }
 
 /*------------------------------------------------------
 	Portfolio Styles 
@@ -263,11 +267,11 @@ footer .flex-justify {
 .col-md-4, .col-md-5, .col-md-7, .col-md-8 { padding: 0; }
 
 .btn-primary {
-	font-size: 2em;
+	font-size: 1.3em;
 	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-bottom: 5px;
   	background-color: rgb( 3, 150, 89 );
-  	box-shadow: 0px 3px 0px 0px rgb(8, 110, 61);
-  	width: 160px;
   	height: 55px;
   	border: none; border-radius: 0px;
   	-moz-transition: background-color .5s ease;
@@ -278,7 +282,6 @@ footer .flex-justify {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
 	background-color: rgb( 8, 110, 61 );
-	box-shadow: 0px 3px 0px 0px rgb( 3, 150, 89 );
 }
 
 /*------------------------------------------------------
@@ -286,34 +289,35 @@ footer .flex-justify {
 --------------------------------------------------------*/
 @media only screen and (min-width: 1200px){
 	h1 { font-size: 4.5em; }
+	#recycle h1 { font-size: 3.5em; }
 	.services_buttons { text-align: right; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
 		height: 85px;
 	}
 	#about .col-md-7 { padding-left: 50px; }
 	#about .col-md-8 { padding-left: 20px; }
-	#team .col-md-7 { padding-right: 50px; }
-	#skills .col-md-7 { padding-right: 90px; }
+	#recycle .col-md-7 { padding-right: 90px; }
 	#portfolio .col-md-7 { padding-left: 46px; }
 	#contact .col-md-7 { padding-left: 50px; }	
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	h1 { font-size: 3.5em; }
+	#recycle h1 { font-size: 2.5em; }
 	.services_buttons { text-align: right; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
 		height: 85px;
 	}
 	#about .col-md-7 { padding-left: 30px; }
 	#about .col-md-8 { padding-left: 20px; }
-	#team .col-md-7 { padding-right: 30px; }
-	#skills .col-md-7 { padding-right: 30px; }
+	#recycle .col-md-7 { padding-right: 30px; }
 	#portfolio .col-md-7 { padding-left: 30px; }
 	#contact .col-md-7 { padding-left: 30px; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	h1 { font-size: 2.5em; }
+	#recycle h1 { font-size: 1.5em; }
 	nav { font-size: 1em; }
 	.btn-primary { font-size: 1.6em; }
 	.services_buttons { text-align: left; }
@@ -330,6 +334,7 @@ footer .flex-justify {
 
 @media only screen and (max-width: 767px) and (min-width: 481px) {
 	h1 { font-size: 2.5em; }
+	#recycle h1 { font-size: 1.5em; }
 	nav .fa { display: inline; text-align: left; margin-bottom: 0; margin-right: 10px; }
 	.navbar-default .navbar-nav>li>a { padding-top: 15px; padding-bottom: 15px; }
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
@@ -341,7 +346,6 @@ footer .flex-justify {
 	.blog_post img { max-width: 100%; }
 	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }	
 	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px; }
-	#team_content { width: 100%; }
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }
 	#services_tabs { padding-left: 10px; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 20px; padding-left: 0; }	
@@ -364,7 +368,6 @@ footer .flex-justify {
     .blog_post img { max-width: 100%; }    
 	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }
 	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px; }
-	#team_content { width: 100%; }
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }	
 	#services_tabs { padding-left: 0; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 10px; padding-left: 0; }	
