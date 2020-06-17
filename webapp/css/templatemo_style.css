@@ -125,15 +125,6 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 #historic_content { height: 230px; overflow-y: scroll; }
 
 /*------------------------------------------------------
-	Our Team Styles
---------------------------------------------------------*/
-#team .col-md-4 { padding: 5px; }
-#team img { margin: 0 auto; margin-bottom: 15px; }
-#team h1 { background-color: #0f70b4; }
-#team p { text-align: center; }
-#team_content { height: 280px; }
-
-/*------------------------------------------------------
 	Services Styles 
 --------------------------------------------------------*/
 .services_buttons .icon-button:last-of-type { margin-bottom: 0; }
@@ -313,7 +304,6 @@ footer .flex-justify {
 	}
 	#about .col-md-7 { padding-left: 50px; }
 	#about .col-md-8 { padding-left: 20px; }
-	#team .col-md-7 { padding-right: 50px; }
 	#skills .col-md-7 { padding-right: 90px; }
 	#portfolio .col-md-7 { padding-left: 46px; }
 	#contact .col-md-7 { padding-left: 50px; }	
@@ -328,7 +318,6 @@ footer .flex-justify {
 	}
 	#about .col-md-7 { padding-left: 30px; }
 	#about .col-md-8 { padding-left: 20px; }
-	#team .col-md-7 { padding-right: 30px; }
 	#skills .col-md-7 { padding-right: 30px; }
 	#portfolio .col-md-7 { padding-left: 30px; }
 	#contact .col-md-7 { padding-left: 30px; }
@@ -365,7 +354,6 @@ footer .flex-justify {
 	.blog_post img { max-width: 100%; }
 	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }	
 	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px; }
-	#team_content { width: 100%; }
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }
 	#services_tabs { padding-left: 10px; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 20px; padding-left: 0; }	
@@ -388,7 +376,6 @@ footer .flex-justify {
     .blog_post img { max-width: 100%; }    
 	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }
 	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px; }
-	#team_content { width: 100%; }
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }	
 	#services_tabs { padding-left: 0; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 10px; padding-left: 0; }	
