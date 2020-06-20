@@ -119,10 +119,15 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 /*------------------------------------------------------
 	About Us Styles 
 --------------------------------------------------------*/
-#about h1 { background-color: #36AD47; }
+#about h1 { background-color: #36AD47; height: 100%; }
 #about img { padding: 0; }
-#about_content { height: 280px; overflow-y: scroll; }
-#historic_content { height: 230px; overflow-y: scroll; }
+#about_content { height: 100%; overflow-y: scroll; }
+#historic_content { height: 100%; overflow-y: scroll; width: 100%; padding-top: 30px;}
+
+.about_section {
+  padding-top: 85px;
+  margin-top: 50px;
+}
 
 /*------------------------------------------------------
 	Services Styles 
