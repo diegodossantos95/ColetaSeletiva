@@ -31,7 +31,7 @@ section h1 { text-transform: uppercase; color: white; margin-top: 0px; margin-bo
 
 .container { margin: 0 auto; }
 
-p { text-align: center; }
+p { text-align: center; font-size: 16px;}
 
 /*http://css-tricks.com/vertically-center-multi-lined-text/*/
 .center-row { display: table; }
@@ -121,8 +121,10 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 --------------------------------------------------------*/
 #about h1 { background-color: #36AD47; height: 100%; }
 #about img { padding: 0; }
-#about_content { height: 100%; overflow-y: scroll; }
-#historic_content { height: 100%; overflow-y: scroll; width: 100%; padding-top: 30px;}
+#about_content { height: 100vh;  display:table; }
+#about_title {  line-height: inherit; vertical-align:middle; display:table-cell; }
+#historic_content { height: 100vh;  display:table; }
+#historic_title { width: 100%; font-size: 1em;}
 
 .about_section {
   padding-top: 85px;
