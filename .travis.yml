@@ -5,7 +5,6 @@ script:
 - echo "only deploy"
 deploy:
   provider: firebase
-  edge: true
   on:
     all_branches: true
   token:
