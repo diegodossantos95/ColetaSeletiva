@@ -408,6 +408,7 @@ footer .flex-justify {
 
 @media only screen and (max-width: 430px) {
 	.flex-align { display: block; }
+	#about_content { height: 10vh;  display:table; width: 100%; margin-bottom: 10px; }
 	section h1 { font-size: 1.6em; line-height: 50px; margin-bottom: 5px; }
 	body { font-size: 10px; }
 	.btn-primary { font-size: 1.1em; }	
