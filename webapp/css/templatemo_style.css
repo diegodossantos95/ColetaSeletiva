@@ -37,6 +37,8 @@ p { text-align: center; font-size: 16px;}
 .center-row { display: table; }
 .center-row .center { display: table-cell; vertical-align: middle; }
 
+.vertical-center { vertical-align: middle !important; }
+
 .flex-align {
 	display: flex;
 	flex-wrap: wrap;
